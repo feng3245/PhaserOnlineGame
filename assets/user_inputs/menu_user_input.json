@@ -1,0 +1,18 @@
+{
+    "keydown": {
+        "LEFT": {
+            "callback": "game_state.move_menu",
+            "args": [-1]
+        },
+        "RIGHT": {
+            "callback": "game_state.move_menu",
+            "args": [1]
+        },
+        "ENTER": {
+            "callback": "options_menu.select"
+        },
+        "ESC": {
+            "callback": "game_state.close_menu"
+        }
+    }
+}

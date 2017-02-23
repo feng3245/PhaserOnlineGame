@@ -1,0 +1,15 @@
+{
+    "keydown": {
+        "LEFT": {
+            "callback": "game_state.move_menu",
+            "args": [-1]
+        },
+        "RIGHT": {
+            "callback": "game_state.move_menu",
+            "args": [1]
+        },
+        "ENTER": {
+            "callback": "game_state.select_menu"
+        }
+    }
+}

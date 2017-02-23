@@ -1,0 +1,119 @@
+{
+    "assets": {        
+        "message_box_image": {"type": "image", "source": "assets/images/world/message_box.png"},
+        
+        "warrior_face_image": {"type": "image", "source": "assets/images/battle/warrior_face.png"},
+        "mage_face_image": {"type": "image", "source": "assets/images/battle/mage_face.png"},
+        
+        "healthbar_image": {"type": "image", "source": "assets/images/battle/healthbar.png"},
+        "manabar_image": {"type": "image", "source": "assets/images/battle/manabar.png"},
+        
+        "health_potion_image": {"type": "image", "source": "assets/images/battle/health_potion.png"},
+        "mana_potion_image": {"type": "image", "source": "assets/images/battle/mana_potion.png"}
+    },
+    "groups": [
+        "unit_stats",
+        "background",
+        "hud"
+    ],
+    "prefabs": {
+        "background": {
+            "type": "background",
+            "position": {"x": 0, "y": 0},
+            "properties": {
+                "texture": "message_box_image",
+                "group": "background",
+                "scale": {"x": 1, "y": 4}
+            }
+        },
+        "options_menu": {
+            "type": "menu",
+            "position": {"x": 50, "y": 50},
+            "properties": {
+                "group": "hud",
+                "menu_items": {
+                    "party": {
+                        "type": "party_menu_item",
+                        "position": {"x": 50, "y": 50},
+                        "properties": {
+                            "group": "hud",
+                            "text": "Party",
+                            "style": {"font": "14px Kells", "fill": "#FFFFFF"}
+                        }
+                    },
+                    "inventory": {
+                        "type": "show_inventory_menu_item",
+                        "position": {"x": 150, "y": 50},
+                        "properties": {
+                            "group": "hud",
+                            "text": "Inventory",
+                            "style": {"font": "14px Kells", "fill": "#FFFFFF"}
+                        }
+                    },
+                    "equipment": {
+                        "type": "show_equipment_menu_item",
+                        "position": {"x": 300, "y": 50},
+                        "properties": {
+                            "group": "hud",
+                            "text": "Equipment",
+                            "style": {"font": "14px Kells", "fill": "#FFFFFF"}
+                        }
+                    }
+                }
+            }
+        },
+        "show_warrior_unit": {
+            "type": "show_player_unit",
+            "position": {"x": 50, "y": 100},
+            "properties": {
+                "group": "hud",
+                "text_style": {"font": "14px Kells", "fill": "#FFFFFF"},
+                "prefab": "warrior",
+                "face_texture": "warrior_face_image"
+            }
+        },
+        "show_mage_unit": {
+            "type": "show_player_unit",
+            "position": {"x": 50, "y": 250},
+            "properties": {
+                "group": "hud",
+                "text_style": {"font": "14px Kells", "fill": "#FFFFFF"},
+                "prefab": "mage",
+                "face_texture": "mage_face_image"
+            }
+        },
+        "items_menu": {
+            "type": "menu",
+            "position": {"x": 50, "y": 100},
+            "properties": {
+                "group": "hud",
+                "menu_items": {
+                    
+                }
+            }
+        },
+        "show_warrior_equipment": {
+            "type": "show_player_unit_equipment",
+            "position": {"x": 50, "y": 100},
+            "properties": {
+                "group": "hud",
+                "text_style": {"font": "14px Kells", "fill": "#FFFFFF"},
+                "prefab": "warrior",
+                "face_texture": "warrior_face_image"
+            }
+        },
+        "show_mage_equipment": {
+            "type": "show_player_unit_equipment",
+            "position": {"x": 50, "y": 250},
+            "properties": {
+                "group": "hud",
+                "text_style": {"font": "14px Kells", "fill": "#FFFFFF"},
+                "prefab": "mage",
+                "face_texture": "mage_face_image"
+            }
+        }
+    },
+    "user_inputs": {
+        "menu": "assets/user_inputs/menu_user_input.json"
+    }
+}

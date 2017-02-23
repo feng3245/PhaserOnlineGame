@@ -1,0 +1,47 @@
+{
+    "assets": {
+        "map_tileset": {"type": "image", "source": "assets/images/tileset.png"},
+
+        "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 16, "frame_height": 16},
+        
+        "guard_image": {"type": "image", "source": "assets/images/world/knight.png"},
+        "villager_image": {"type": "image", "source": "assets/images/world/villager.png"},
+        
+        "message_box_image": {"type": "image", "source": "assets/images/world/message_box.png"},
+        
+        "goblin_image": {"type": "image", "source": "assets/images/world/goblin.png"},
+        "slime_image": {"type": "image", "source": "assets/images/world/slime.png"},
+        "snake_image": {"type": "image", "source": "assets/images/world/snake.png"},
+        
+        "warrior_helmet_image": {"type": "image", "source": "assets/images/world/warrior_helmet.png"},
+        
+        "level_tilemap": {"type": "tilemap", "source": "assets/maps/town.json"}
+    },
+    "groups": [
+        "doors",
+        "items",
+        "equipments",
+        "npcs",
+        "players",
+        "enemy_spawners",
+        "hud"
+    ],
+    "map": {
+        "key": "level_tilemap",
+        "tilesets": ["map_tileset"]
+    },
+    "enemy_encounters": {
+        "reptile": "assets/enemy_encounters/reptile.json",
+        "snake": "assets/enemy_encounters/snake.json",
+        "slime": "assets/enemy_encounters/slime.json"
+    },
+    "npc_messages": {
+        "guard": "assets/npc_messages/guard.txt",
+        "villager": "assets/npc_messages/villager.txt"
+    },
+    "user_inputs": {
+        "world_map": "assets/user_inputs/world_map_user_input.json",
+        "talking": "assets/user_inputs/talking_user_input.json"
+    },
+    "level_file": "assets/levels/town.json"
+}

@@ -1,0 +1,7 @@
+{
+    "keydown": {
+        "SPACEBAR": {
+            "callback": "player.end_talk"
+        }
+    }
+}

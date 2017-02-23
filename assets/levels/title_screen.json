@@ -1,0 +1,44 @@
+{
+    "assets": {
+        "background_image": {"type": "image", "source": "assets/images/battle/background.png"}
+    },
+    "groups": [
+        "items",
+        "background",
+        "text"
+    ],
+    "prefabs": {
+        "background": {
+            "type": "background",
+            "position": {"x": 0, "y": 0},
+            "properties": {
+                "texture": "background_image",
+                "group": "background"
+            }
+        },
+        "title": {
+            "type": "text",
+            "position": {"x": 320, "y": 200},
+            "properties": {
+                "group": "text",
+                "text": "Phaser RPG",
+                "anchor": {"x": 0.5, "y": 0.5},
+                "style": {"font": "65px Kells", "fill": "#000000"}
+            }
+        },
+        "start_message": {
+            "type": "text",
+            "position": {"x": 320, "y": 400},
+            "properties": {
+                "group": "text",
+                "text": "press enter to start",
+                "anchor": {"x": 0.5, "y": 0.5},
+                "style": {"font": "20px Kells", "fill": "#000000"}
+            }
+        }
+    },
+    "user_inputs": {
+        "title_user_input": "assets/user_inputs/title_user_input.json"
+    },
+    "default_data": "assets/levels/default_data.json"
+}

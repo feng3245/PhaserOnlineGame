@@ -1,0 +1,50 @@
+{
+    "enemy_data": {
+        "reptile1": {
+            "type": "enemy_unit",
+            "position": {"x": 150, "y": 180},
+            "properties": {
+                "texture": "reptile_spritesheet",
+                "group": "enemy_units",
+                "face_texture": "reptile_face_image",
+                "animations": {
+                    "idle": {"frames": [0, 1, 2, 3, 4], "fps": 5},
+                    "attack1": {"frames": [5, 6, 7, 8, 9, 10, 0], "fps": 7},
+                    "attack2": {"frames": [5, 6, 7, 8, 9, 10, 0], "fps": 7},
+                    "hit": {"frames": [13, 14], "fps": 2}
+                },
+                "stats": {
+                    "attack": 30,
+                    "defense": 10,
+                    "health": 50,
+                    "speed": 15
+                }
+            }
+        },
+        "dino1": {
+            "type": "enemy_unit",
+            "position": {"x": 150, "y": 250},
+            "properties": {
+                "texture": "dino_spritesheet",
+                "group": "enemy_units",
+                "face_texture": "dino_face_image",
+                "animations": {
+                    "idle": {"frames": [0, 1, 2, 3, 4], "fps": 5},
+                    "attack1": {"frames": [5, 6, 7, 8, 9, 10, 11, 12, 13, 0], "fps": 10},
+                    "attack2": {"frames": [14, 15, 16, 17, 0], "fps": 5},
+                    "hit": {"frames": [18, 19], "fps": 2}
+                },
+                "stats": {
+                    "attack": 30,
+                    "defense": 10,
+                    "health": 50,
+                    "speed": 15
+                }
+            }
+        }
+     },
+     "reward": {
+        "experience": 100,
+         "items": [{"type": "potion", "properties": {"group": "items", "item_texture": "health_potion_image", "health_power": 50}}]
+     }
+}

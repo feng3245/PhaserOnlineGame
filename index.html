@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<title>Learn Game Development at ZENVA.com</title>
+        
+		<style>
+		  body {
+		    padding: 0px;
+		    margin: 0px;
+		    background-color: black;
+		  }
+            @font-face {
+		  	font-family: 'Kells';
+		  	src: url('assets/fonts/kells_uncial.ttf');
+		  }
+            
+          .fontPreload {
+		  	font-family: 'Kells';
+		  	position:absolute;
+		  	left:-100px;
+		   }
+        
+        </style>
+	</head>
+
+	<body>
+        <div class="fontPreload">.</div>
+        
+        <script type="text/javascript" src="js/phaser.js"></script>
+        <script type="text/javascript" src="js/priority-queue.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+        
+        <script src="js/Utils.js"></script>
+        
+        <script src="js/states/BootState.js"></script>
+        <script src="js/states/LoadingState.js"></script>
+        <script src="js/states/JSONLevelState.js"></script>
+        <script src="js/states/BattleState.js"></script>
+        <script src="js/states/WorldState.js"></script>
+        <script src="js/states/MenuState.js"></script>
+        <script src="js/states/TitleState.js"></script>
+        
+        <script src="js/plugins/UserInput.js"></script>
+        
+        <script src="js/prefabs/Prefab.js"></script>
+        <script src="js/prefabs/TilePrefab.js"></script>
+        <script src="js/prefabs/TextPrefab.js"></script>
+        
+        <script src="js/prefabs/units/Unit.js"></script>
+        <script src="js/prefabs/units/PlayerUnit.js"></script>
+        <script src="js/prefabs/units/EnemyUnit.js"></script>
+        <script src="js/prefabs/units/BossUnit.js"></script>
+        <script src="js/prefabs/units/Attack.js"></script>
+        <script src="js/prefabs/units/PhysicalAttack.js"></script>
+        <script src="js/prefabs/units/MagicAttack.js"></script>
+        <script src="js/prefabs/units/UnitStats.js"></script>
+        
+        <script src="js/prefabs/items/Inventory.js"></script>
+        <script src="js/prefabs/items/Item.js"></script>
+        <script src="js/prefabs/items/Potion.js"></script>
+        <script src="js/prefabs/items/Equipment.js"></script>
+        
+        <script src="js/prefabs/world/Player.js"></script>
+        <script src="js/prefabs/world/EnemySpawner.js"></script>
+        <script src="js/prefabs/world/Door.js"></script>
+        <script src="js/prefabs/world/NPC.js"></script>
+        
+        <script src="js/prefabs/hud/Menu.js"></script>
+        <script src="js/prefabs/hud/MenuItem.js"></script>
+        <script src="js/prefabs/hud/TextMenuItem.js"></script>
+        <script src="js/prefabs/hud/EnemyMenuItem.js"></script>
+        <script src="js/prefabs/hud/AttackMenuItem.js"></script>
+        <script src="js/prefabs/hud/MagicAttackMenuItem.js"></script>
+        <script src="js/prefabs/hud/InventoryMenuItem.js"></script>
+        <script src="js/prefabs/hud/RunMenuItem.js"></script>
+        <script src="js/prefabs/hud/ItemMenuItem.js"></script>
+        <script src="js/prefabs/hud/PartyMenuItem.js"></script>
+        <script src="js/prefabs/hud/ShowInventoryMenuItem.js"></script>
+        <script src="js/prefabs/hud/ShowEquipmentMenuItem.js"></script>
+        
+        <script src="js/prefabs/hud/ShowPlayerUnit.js"></script>
+        <script src="js/prefabs/hud/ShowPlayerUnitInGameMenu.js"></script>
+        <script src="js/prefabs/hud/ShowPlayerUnitEquipment.js"></script>
+        <script src="js/prefabs/hud/ShowStat.js"></script>
+        <script src="js/prefabs/hud/ShowStatWithBar.js"></script>
+        <script src="js/prefabs/hud/ShowStatWithText.js"></script>
+        <script src="js/prefabs/hud/ShowEquipment.js"></script>
+        <script src="js/prefabs/hud/MessageBox.js"></script>
+        <script src="js/prefabs/hud/ActionMessage.js"></script>
+        
+        <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
