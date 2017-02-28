@@ -1,11 +1,11 @@
 var RPG = RPG || {};
 
 var config = {
-    apiKey: "AIzaSyDeH6QKtjo-P3SvQ-kL0ry7-0wexoilSS4",
-    authDomain: "phaser-rpg.firebaseapp.com",
-    databaseURL: "https://phaser-rpg.firebaseio.com",
-    storageBucket: "phaser-rpg.appspot.com",
-    messagingSenderId: "30038961490"
+   apiKey: "AIzaSyCnT5X11nrezFQmUbrn2CG9KP7cGFCh3TI",
+    authDomain: "phaserpg-d7e9b.firebaseapp.com",
+    databaseURL: "https://phaserpg-d7e9b.firebaseio.com",
+    storageBucket: "phaserpg-d7e9b.appspot.com",
+    messagingSenderId: "591116713649"
 };
 firebase.initializeApp(config);
 
