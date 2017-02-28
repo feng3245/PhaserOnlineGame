@@ -40,3 +40,11 @@ RPG.PlayerUnit.prototype.receive_experience = function (experience) {
         }
     }
 };
+
+RPG.PlayerUnit.prototype.receive_damage = function (damage){
+    "use strict";
+    RPG.Unit.prototype.receive_damage.call(this, damage);
+    this.game_state.game.party_data[this.name].stats["health"] -= damage;
+    this.game_state.prefabs.show_player_unit.player_unit_health.update();
+
+}

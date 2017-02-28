@@ -20,8 +20,12 @@ RPG.Item.prototype.kill = function () {
     "use strict";
     Phaser.Sprite.prototype.kill.call(this);
     var menu_item_index, menu_item;
-    // remove item from the menu
-    menu_item_index = this.game_state.prefabs.items_menu.find_item_index(this.name + "_menu_item");
+    // remove item from the menu if there is 0 left
+    if(this.game_state.game.inventory.items[this.name].amount == 0)
+        {
+            menu_item_index = this.game_state.prefabs.items_menu.find_item_index(this.name + "_menu_item");
     menu_item = this.game_state.prefabs.items_menu.remove_item(menu_item_index);
     menu_item.kill();
+        }
+    
 };

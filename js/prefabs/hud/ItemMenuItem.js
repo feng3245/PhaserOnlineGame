@@ -20,6 +20,9 @@ RPG.ItemMenuItem.prototype.select = function () {
     this.game_state.prefabs.items_menu.show(false);
     // use item on current unit
     this.game_state.game.inventory.use_item(this.item_name, this.game_state.current_unit);
+    this.amount = this.game_state.game.inventory.items[this.item_name].amount;
+     this.amount_text =  new RPG.TextPrefab(this.game_state, this.name + "_amount", {x: this.x + 1.5*this.width, y: this.y + 0.5*this.height}, {group: "hud", text: this.amount, style: this.game_state.TEXT_STYLE});
+    this.amount_text.visible = false;
     // enable actions menu
     this.game_state.prefabs.actions_menu.enable();
     this.game_state.prefabs.actions_menu.show(true);

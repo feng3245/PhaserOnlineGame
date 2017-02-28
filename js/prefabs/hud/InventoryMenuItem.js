@@ -10,8 +10,13 @@ RPG.InventoryMenuItem.prototype.constructor = RPG.InventoryMenuItem;
 
 RPG.InventoryMenuItem.prototype.select = function () {
     "use strict";
+    var total =0;
+    for (var item_type in this.game_state.game.inventory.items)
+        {
+            total+= this.game_state.game.inventory.items[item_type].amount;
+                    }
     // select only if there are remaining items
-    if (this.game_state.game.inventory.items.length > 0) {
+    if (total > 0) {
         // disable actions menu
         this.game_state.prefabs.actions_menu.disable();
         this.game_state.prefabs.actions_menu.show(false);

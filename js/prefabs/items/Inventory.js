@@ -29,8 +29,11 @@ RPG.Inventory.prototype.collect_item = function (game_state, item_object, add_to
     if (this.items[item_object.type]) {
         this.items[item_object.type].amount += 1;
     } else {
-        item = new this.item_classes[item_object.type](game_state, item_object.type + this.items.length, {x: 0, y: 0}, item_object.properties);
-        this.items[item_object.type] = {prefab: item, amount: 1};
+        item = new this.item_classes[item_object.type](game_state, item_object.type, {x: 0, y: 0}, item_object.properties);
+        this.items[item_object.type] = item;
+        this.items[item_object.type].prefab = item;
+        this.items[item_object.type].amount = 1;
+        this.items[item_object.type].use = item.use;
     }
     
     if (add_to_database) {
