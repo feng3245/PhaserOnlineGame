@@ -14,4 +14,5 @@ RPG.Potion.prototype.use = function (target) {
     "use strict";
     RPG.Item.prototype.use.call(this);
     target.stats.health = Math.min(100, target.stats.health + this.health_power);
+    this.game_state.game.party_data[target.name].stats.health += this.health_power;
 };
